@@ -1,10 +1,32 @@
-// import logo from './logo.svg';
-// import './App.css';
 import React from 'react';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import Languages from './languages';
 
+function App() {
+  const languages = Languages;
+  const [siteLanguage, setSiteLanguage] = React.useState(languages.english);
+
+  function toggleLanguage() {
+    setSiteLanguage((prevLanguage) => (
+      prevLanguage.name === 'english' ? languages.finnsih : languages.english
+    ));
+  }
+
+  return (
+    <>
+      <Navbar language={siteLanguage.navItems} handleClick={() => toggleLanguage()} />
+      <Main languageProjects={siteLanguage.projects} language={siteLanguage.mainItems} />
+      <Footer language={siteLanguage.footerItems} />
+    </>
+  );
+}
+
+export default App;
+
+// import logo from './logo.svg';
+// import './App.css';
 // function App() {
 //   return (
 //     < className="App">
@@ -25,15 +47,3 @@ import Footer from './components/Footer';
 //     <<>
 //   );
 // }
-
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Main />
-      <Footer />
-    </>
-  );
-}
-
-export default App;
