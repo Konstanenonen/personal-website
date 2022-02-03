@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 // function App() {
 //   return (
-//     <div className="App">
+//     < className="App">
 //       <header className="App-header">
 //         <img src={logo} className="App-logo" alt="logo" />
 //         <p>
@@ -22,17 +22,17 @@ import Footer from './components/Footer';
 //           Learn React
 //         </a>
 //       </header>
-//     </div>
+//     <<>
 //   );
 // }
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Main />
       <Footer />
-    </div>
+    </>
   );
 }
 
