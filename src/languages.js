@@ -19,7 +19,7 @@ const languages = {
         gitHub: 'https://github.com/Konstanenonen/To-Do-List-jQuery',
         link: 'https://objective-bhabha-b57a39.netlify.app/',
         linkName: 'Link to live site',
-        about: 'Simple task list made with jQuery and Bootsrap. App also uses local storage, so the data will survive a page refresh.',
+        about: 'Simple task list made with jQuery and Bootsrap. App also uses Local Storage, so the data will survive a page refresh.',
       },
       {
         name: 'Global Corona Statistics App',
@@ -53,14 +53,14 @@ const languages = {
         gitHub: 'https://github.com/Konstanenonen/To-Do-List-jQuery',
         link: 'https://objective-bhabha-b57a39.netlify.app/',
         linkName: 'Linkki toimivalle sivulle',
-        about: 'Yksinkertainen tehtävälista tehty jQuerya ja bootsrappia hyödyntäen. Toteutuksessa on myös käytetty local storage, joten sovellus on sivun päivittämisen kestävä',
+        about: 'Yksinkertainen tehtävälista tehty jQuerya ja bootsrappia hyödyntäen. Toteutuksessa on myös käytetty Local Storagea, joten sovellus on sivun päivittämisen kestävä.',
       },
       {
         name: 'Koronatilanne sovellus',
         gitHub: 'https://github.com/Konstanenonen/Global-Corona-Statistics-App',
         link: 'https://gallant-wescoff-74ee5c.netlify.app/',
         linkName: 'Linkki toimivalle sivulle',
-        about: 'Sovellus, jolla voi hakea tietoa eri maiden pandemiatilanteen tuoreimmista luvuista.',
+        about: 'Sovellus, jolla voi hakea tietoa eri maiden pandemiatilanteen tuoreimmista luvuista. Tietoa sovellus hakee api-rajapinnasta: "https://api.covid19api.com/".',
       },
     ],
     footerItems: [

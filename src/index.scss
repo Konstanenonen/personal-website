@@ -54,6 +54,11 @@ body {
   button:focus {
     color:white;
   }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .main--container {
@@ -64,6 +69,7 @@ body {
   justify-content: center;
 
   h2 {
+    padding-top: 50px;
     font-size: 30px;
   }
 
@@ -100,7 +106,7 @@ body {
   p {
     color: black;
     padding: 5px 5px 10px 10px;
-    color: rgb(34, 33, 33);
+    color: rgb(71, 69, 69);
     margin-top: 10px;
   }
 

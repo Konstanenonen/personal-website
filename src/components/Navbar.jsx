@@ -7,9 +7,9 @@ function Navbar(props) {
     <nav className="nav--container">
       <button type="button" onClick={props.handleClick}>Eng | Fin</button>
       <ul>
-        <li>{props.language[0]}</li>
-        <li>{props.language[1]}</li>
-        <li>{props.language[2]}</li>
+        <li><a href="#about">{props.language[0]}</a></li>
+        <li><a href="#experience">{props.language[1]}</a></li>
+        <li><a href="#projects">{props.language[2]}</a></li>
       </ul>
     </nav>
   );

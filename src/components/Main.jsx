@@ -17,11 +17,11 @@ function Main(props) {
 
   return (
     <main className="main--container">
-      <h2>{props.language[0]}</h2>
+      <h2 id="about">{props.language[0]}</h2>
       <div className="placeHolderArea">{props.language[3]}</div>
-      <h2>{props.language[1]}</h2>
+      <h2 id="experience">{props.language[1]}</h2>
       <div className="placeHolderArea">{props.language[4]}</div>
-      <h2>{props.language[2]}</h2>
+      <h2 id="projects">{props.language[2]}</h2>
       {projects}
     </main>
   );
