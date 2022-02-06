@@ -62,7 +62,6 @@ body {
 }
 
 .main--container {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +70,19 @@ body {
   h2 {
     padding-top: 50px;
     font-size: 30px;
+  }
+
+  .arrow-up {
+    margin-top: 60px;
+    margin-left: 30px;
+    align-self: flex-start;
+  }
+
+  .arrow-text {
+    margin-top: 5px;
+    margin-left: 10px;
+    align-self: flex-start;
+    width: 100px;
   }
 
   .placeHolderArea {
@@ -83,19 +95,18 @@ body {
     border-width: 2px;
     margin-bottom: 100px;
   }
+
 }
 
 .project--container {
+  height: 250px;
   margin: 20px 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
   width: 90%;
-  border-color: grey;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 7px;
-  box-shadow: 3px 3px 8px grey;
+  box-shadow: 0px 0px 15px grey;
 
   h3 {
     font-size: 22px;
@@ -105,23 +116,20 @@ body {
 
   p {
     color: black;
-    padding: 5px 5px 10px 10px;
     color: rgb(71, 69, 69);
-    margin-top: 10px;
+    margin: 10px 5px 15px 20px;
   }
 
-  a {
-    font-size: 18px;
-    text-align: center;
-    color: black;
-    margin: 7px 0 10px 0;
-  }
-  
-  .placeHolderBox {
-    border-radius: 5px;
-    margin: 10px 10px 10px 10px;
-    height: 200px;
-    background-color: darkgrey;
+  .link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: rgb(85, 119, 165);
+      font-size: 18px;
+      text-align: center;
+      margin: 7px 10px 10px 10px;
+    }
   }
 }
 
@@ -136,9 +144,18 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  p {
-    margin-left: 10px;
-    font-size: 20px;
+  .friendly-ask-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
   }
 
   ul {
@@ -153,8 +170,6 @@ body {
   a {
     color: white;
     text-decoration: none;
-  }
-  a:hover {
-    color:yellow;
+    margin-left: 10px;
   }
 }

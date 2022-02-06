@@ -12,6 +12,7 @@ const languages = {
       'Projects',
       'Here comes information about me',
       'Here comes information about my experience',
+      'Vaihda kieli suomeksi',
     ],
     projects: [
       {
@@ -26,12 +27,12 @@ const languages = {
         gitHub: 'https://github.com/Konstanenonen/Global-Corona-Statistics-App',
         linkName: 'Link to live site',
         link: 'https://gallant-wescoff-74ee5c.netlify.app/',
-        about: 'I made a web app that fetches information from "https://api.covid19api.com/ using a button for Global statistics, dropdown menu for a few selected countries, and then there is a search field to make a search for any wanted country. After fetching the data, it is shown in a table that uses colors, icons and bootstrap styling to make the data look nice and readable.',
+        about: 'A web app that fetches Corona pandemic statistics from "https://api.covid19api.com/',
       },
     ],
-    footerItems: [
-      'Let\'s connect!',
-    ],
+    footerItems: {
+      connectText: 'Drop a message!',
+    },
   },
   finnsih: {
     name: 'finnish',
@@ -46,6 +47,7 @@ const languages = {
       'Projektit',
       'Tänne tulee tietoa minusta',
       'Tänne tulee tietoa kokemuksestani',
+      'Change language to English',
     ],
     projects: [
       {
@@ -63,9 +65,9 @@ const languages = {
         about: 'Sovellus, jolla voi hakea tietoa eri maiden pandemiatilanteen tuoreimmista luvuista. Tietoa sovellus hakee api-rajapinnasta: "https://api.covid19api.com/".',
       },
     ],
-    footerItems: [
-      'Ota yhteyttä!',
-    ],
+    footerItems: {
+      connectText: 'Lähetä viesti!',
+    },
   },
 };
 
