@@ -17,7 +17,7 @@ const languages = {
     projects: [
       {
         name: 'To-do-list',
-        gitHub: 'https://github.com/Konstanenonen/To-Do-List-jQuery',
+        gitHub: 'https://github.com/konstanenonen/To-Do-List-jQuery',
         link: 'https://objective-bhabha-b57a39.netlify.app/',
         linkName: 'Link to live site',
         about: 'Simple task list made with jQuery and Bootsrap. App also uses Local Storage, so the data will survive a page refresh.',
