@@ -21,15 +21,19 @@ function Main(props) {
   ));
 
   return (
-    <main className="main--container">
-      <FontAwesomeIcon icon={['fas', 'arrow-up']} size="2x" className="arrow-up" />
-      <p className="arrow-text">{language[5]}</p>
-      <h2 id="about">{language[0]}</h2>
-      <div className="placeHolderArea">{language[3]}</div>
-      <h2 id="experience">{language[1]}</h2>
-      <div className="placeHolderArea">{language[4]}</div>
-      <h2 id="projects">{language[2]}</h2>
-      {projects}
+    <main>
+      <div className="main--container">
+        <FontAwesomeIcon icon={['fas', 'arrow-up']} size="2x" className="arrow-up" />
+        <p className="arrow-text">{language[5]}</p>
+        <h2 id="about">{language[0]}</h2>
+        <div className="placeHolderArea">{language[3]}</div>
+        <h2 id="experience">{language[1]}</h2>
+        <div className="placeHolderArea">{language[4]}</div>
+        <h2 id="projects">{language[2]}</h2>
+      </div>
+      <div className="allProjects">
+        {projects}
+      </div>
     </main>
   );
 }
