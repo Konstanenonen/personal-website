@@ -91,15 +91,20 @@ body {
   .arrow-up {
     animation-duration: 2s;
     animation-name: bounce;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
     margin-top: 60px;
     margin-left: 30px;
     align-self: flex-start;
   }
 
   .arrow-text {
+    color: rgb(68, 67, 67);
     font-size: 14px;
     padding: 10px 0px 10px 10px;
-    border-style: dashed;
+    border: solid 2px darkgray;
     border-radius: 20px;
     margin-top: 5px;
     margin-left: 5px;
