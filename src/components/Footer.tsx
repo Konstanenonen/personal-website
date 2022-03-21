@@ -1,11 +1,12 @@
 // font-awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function Footer(props) {
-  const { connectText } = props;
+interface Props {
+  connectText: string;
+}
+
+function Footer({ connectText }: Props) {
   return (
     <footer className="footer--container">
       <div className="friendly-ask-container">
@@ -29,8 +30,5 @@ function Footer(props) {
     </footer>
   );
 }
-Footer.propTypes = {
-  connectText: PropTypes.string.isRequired,
-};
 
 export default Footer;

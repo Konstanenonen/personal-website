@@ -1,13 +1,22 @@
 // font-awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import Project from './Project';
 
-function Main(props) {
-  const { language, languageProjects } = props;
+interface projectObject {
+  name: string;
+  gitHub: string;
+  linkName: string;
+  link: string;
+  about: string;
+}
 
+interface Props {
+  language: string[];
+  languageProjects: projectObject[];
+}
+
+function Main({ language, languageProjects }: Props) {
   const projects = languageProjects.map((project) => (
     <Project
       key={project.name}
@@ -16,7 +25,6 @@ function Main(props) {
       linkName={project.linkName}
       linkki={project.link}
       about={project.about}
-      image={project.image}
     />
   ));
 
@@ -37,9 +45,5 @@ function Main(props) {
     </main>
   );
 }
-Main.propTypes = {
-  language: PropTypes.arrayOf(PropTypes.string).isRequired,
-  languageProjects: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
 
 export default Main;

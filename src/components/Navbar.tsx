@@ -1,9 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function Navbar(props) {
-  const { language, handleClick } = props;
+interface Props {
+  language: string[];
+  handleClick: () => void;
+}
 
+function Navbar({ language, handleClick }: Props) {
   return (
     <nav className="nav--container">
       <button type="button" onClick={handleClick}>Eng | Fin</button>
@@ -15,9 +17,5 @@ function Navbar(props) {
     </nav>
   );
 }
-Navbar.propTypes = {
-  language: PropTypes.arrayOf(PropTypes.string).isRequired,
-  handleClick: PropTypes.func.isRequired,
-};
 
 export default Navbar;
