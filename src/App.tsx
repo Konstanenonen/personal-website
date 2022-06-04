@@ -16,9 +16,12 @@ function App() {
   const [siteLanguage, setSiteLanguage] = React.useState(languages.english);
 
   function toggleLanguage() {
-    setSiteLanguage((prevLanguage) => (
-      prevLanguage.name === 'english' ? languages.finnsih : languages.english
-    ));
+    setSiteLanguage((prevLanguage) => {
+      if (prevLanguage.name === 'english') {
+        return languages.finnsih;
+      }
+      return languages.english;
+    });
   }
 
   return (
