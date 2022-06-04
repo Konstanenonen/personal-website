@@ -1,6 +1,6 @@
 // font-awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 
 interface Props {
   connectText: string;
@@ -11,19 +11,21 @@ function Footer({ connectText }: Props) {
     <footer className="footer--container">
       <div className="friendly-ask-container">
         <p>{connectText}</p>
-        <FontAwesomeIcon icon={['fas', 'smile-beam']} size="2x" />
+        <FontAwesomeIcon icon={["fas", "smile-beam"]} size="2x" />
       </div>
       <ul>
         <li>
-          <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="1x" />
-          <a href="https://fi.linkedin.com/in/konsta-nenonen-596767203">LinkedIn</a>
+          <FontAwesomeIcon icon={["fab", "linkedin-in"]} size="1x" />
+          <a href="https://fi.linkedin.com/in/konsta-nenonen-596767203">
+            LinkedIn
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={['fab', 'github']} size="1x" />
+          <FontAwesomeIcon icon={["fab", "github"]} size="1x" />
           <a href="https://github.com/Konstanenonen">GitHub</a>
         </li>
         <li>
-          <FontAwesomeIcon icon={['fas', 'at']} size="1x" />
+          <FontAwesomeIcon icon={["fas", "at"]} size="1x" />
           <a href="mailto:konstanenonen@protonmail.com">Email</a>
         </li>
       </ul>

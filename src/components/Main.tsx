@@ -1,7 +1,7 @@
 // font-awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import Project from './Project';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import Project from "./Project";
 
 interface projectObject {
   name: string;
@@ -31,7 +31,11 @@ function Main({ language, languageProjects }: Props) {
   return (
     <main>
       <div className="main--container">
-        <FontAwesomeIcon icon={['fas', 'arrow-up']} size="2x" className="arrow-up" />
+        <FontAwesomeIcon
+          icon={["fas", "arrow-up"]}
+          size="2x"
+          className="arrow-up"
+        />
         <p className="arrow-text">{language[5]}</p>
         <h2 id="about">{language[0]}</h2>
         <div className="placeHolderArea">{language[3]}</div>
@@ -39,9 +43,7 @@ function Main({ language, languageProjects }: Props) {
         <div className="placeHolderArea">{language[4]}</div>
         <h2 id="projects">{language[2]}</h2>
       </div>
-      <div className="allProjects">
-        {projects}
-      </div>
+      <div className="allProjects">{projects}</div>
     </main>
   );
 }
